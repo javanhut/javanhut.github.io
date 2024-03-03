@@ -1,4 +1,6 @@
 import React from 'react';
+import MovieClip from '@/components/MovieClip';
+
 export default function Home() {
   return (
     <>
@@ -89,7 +91,7 @@ export default function Home() {
           </h2>
           <div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionInfo">
             <div className='accordian-body'>
-              {/* Add your projects here */}
+              <MovieClip />
             </div>
           </div>
         </div>
