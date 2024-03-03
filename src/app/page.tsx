@@ -11,27 +11,51 @@ export default function Home() {
     </form>
         </div>
         </nav><p>Welcome to the jungle ladies and gentlemen.</p>
-        <h2>Who Am I?</h2>
-        <div>
-          <p><i>Personal Philosophy:</i> If I don&apos;t already know what it is I can learn it, If I can&apos;t learn it myself find someone who knows it and learn it from them. </p>
-          <p>I consider myself a Electrical Software Engineer. As is I i feel like both a Electrical Engineer and Software Engineer. I love technology and all things science.</p>
-          <p></p>
+       <div className='accordian' id="accordianInfo">
+        <div className='accordian-item'>
+          <h2 className='accordian-header'>
+            <button className='accordian-button' type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne'>Who Am I?</button>
+          </h2>
+          <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionInfo">
+            <div className='accordian-body'>
+            <p><i>Personal Philosophy:</i> If I don&apos;t already know what it is I can learn it, If I can&apos;t learn it myself find someone who knows it and learn it from them. </p>
+            <p>I consider myself a Electrical Software Engineer. As is I i feel like both a Electrical Engineer and Software Engineer. I love technology and all things science.</p>
+            </div>
+          </div>
         </div>
-        <h2>Education</h2>
-        <div>
-          <p>I have a Bachelor&apos;s degree in Electrical Engineering from the Kennesaw State University, Marietta, Georgia.</p>
-          <p>I am currently pursuing a Master&apos;s degree in Computer Science with a concentration on Artifical Intelligence from the Kennesaw State University, Marietta, Georgia.</p>
+       </div>
+       
+        <div className='accordian-item'>
+          <h2 className='accordian-header'>
+            <button className='accordian-button' type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo'>Education</button>
+          </h2>
+          <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionInfo">
+            <div className='accordian-body'>
+            <p>I have a Bachelor&apos;s degree in Electrical Engineering from the Kennesaw State University, Marietta, Georgia.</p>
+            <p>I am currently pursuing a Master&apos;s degree in Computer Science with a concentration on Artifical Intelligence from the Kennesaw State University, Marietta, Georgia.</p>
+            </div>
+          </div>
         </div>
-        <h2>Work Experience</h2>
-        <div>
+        <div className='accordian-item'>
+        <h2 className='accordian-header'>
+        <button className='accordian-button' type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree'>Work Experience</button>
+        </h2>
+        <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionInfo">
+          <div className='accordian-body'>
           <p>Company: <b>Intel</b></p>
           <p>Role: <b>Software Engineer</b></p>
           <p>Duration: <b>June 2022 - Present</b></p>
+          </div>
         </div>
-        <h2>Skills</h2>
-        <div>
-        <div className="row">
-  <div className="col-8">
+        </div>
+        <div className='accordian-item'></div>
+        <h2 className='accordian-header'>
+        <button className='accordian-button' type='button' data-bs-toggle='collapse' data-bs-target='#collapseFour' aria-expanded='false' aria-controls='collapseFour'>Skills</button> 
+        </h2>
+        <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionInfo">
+          <div className='accordian-body'>
+          <div className="row">
+  <div className="col-4">
     <div className="list-group" id="list-tab" role="tablist">
       <a className="list-group-item list-group-item-action active" id="list-python-list" data-bs-toggle="list" href="#list-python" role="tab" aria-controls="list-python">Python</a>
       <a className="list-group-item list-group-item-action" id="list-java-list" data-bs-toggle="list" href="#list-java" role="tab" aria-controls="list-java">Java</a>
@@ -45,26 +69,42 @@ export default function Home() {
   </div>
   <div className="col-8">
     <div className="tab-content" id="nav-tabContent">
-      <div className="tab-pane fade show active" id="list-python" role="tabpanel" aria-labelledby="list-python-list"><div><p>This is by far the language I&apos;m most proficient and have been coding in the longest.</p> <p>I have coded professionally in this language for about 2 years and contributed to mostly internal repositories with some Open Source contributions.</p> <p>Most of my coding projects are in this language. And the 3 coding language I learned. </p></div></div>
-      <div className="tab-pane fade" id="list-java" role="tabpanel" aria-labelledby="list-java-list">...</div>
-      <div className="tab-pane fade" id="list-c" role="tabpanel" aria-labelledby="list-c-list">...</div>
-      <div className="tab-pane fade" id="list-cpp" role="tabpanel" aria-labelledby="list-cpp-list">...</div>
-      <div className="tab-pane fade show active" id="list-javascript" role="tabpanel" aria-labelledby="list-javascript-list">Hello</div>
-      <div className="tab-pane fade" id="list-go" role="tabpanel" aria-labelledby="list-go-list">...</div>
-      <div className="tab-pane fade" id="list-html" role="tabpanel" aria-labelledby="list-html-list">...</div>
-      <div className="tab-pane fade" id="list-css" role="tabpanel" aria-labelledby="list-css-list">...</div>
+      <div className="tab-pane fade show active" id="list-python" role="tabpanel" aria-labelledby="list-python-list"><div><p>This is by far the language I&apos;m most proficient and have been coding in the longest.</p> <p>I have coded professionally in this language for about 2 years and contributed to mostly internal repositories with some Open Source contributions.</p> <p>Most of my coding projects are in this language. And the third coding language I learned. </p></div></div>
+      <div className="tab-pane fade" id="list-java" role="tabpanel" aria-labelledby="list-java-list"><div><p>This is the language I abhor the most. Not very intuitive and my least favorite language I've used, Used it for university assigments and that's pretty much it.</p> <p>I know it's supposed to be used for so much, I can code in it I just don&apos;t enjoy it</p></div> </div>
+      <div className="tab-pane fade" id="list-c" role="tabpanel" aria-labelledby="list-c-list"><div><p>Mother of most modern languages, C is fantastic. I enjoy it although going from the OOP nature of Python, Java, C++ was alittle difficult at first.</p><p>I&apos;m saddened that i haven't had more chances to code in this language so i&apos;ll make more projects in this language maybe some linux device drivers or a language</p></div></div>
+      <div className="tab-pane fade" id="list-cpp" role="tabpanel" aria-labelledby="list-cpp-list"><div><p>Ahh C++ way too powerful for it's own good I'm not expert in this language but I will try to be it&apos;s just that good.</p><p>You&apos;ll likely see a few projects from me in this language</p></div></div>
+      <div className="tab-pane fade" id="list-javascript" role="tabpanel" aria-labelledby="list-javascript-list"><div><p>Well I made this whole page in react using javascript and typescript. That&apos;s it that&apos;s my stance.</p></div></div>
+      <div className="tab-pane fade" id="list-go" role="tabpanel" aria-labelledby="list-go-list"><div><p>The newest language i&apos;ve been playing with alot recently. Alittle weird but I like it.</p><p>No OOP here either but it gives me similar feelings to C.</p></div></div>
+      <div className="tab-pane fade" id="list-html" role="tabpanel" aria-labelledby="list-html-list"><div><p>I used it to make a bunch of divs.</p></div></div>
+      <div className="tab-pane fade" id="list-css" role="tabpanel" aria-labelledby="list-css-list"><div><p>I still can't center those divs</p></div></div>
     </div>
   </div>
 </div>
+          </div>
         </div>
-        <h6>*Results may vary. But I wrote this whole page myself.</h6>
-        <h2>Projects</h2>
-        <h2>Interesting Things about Me</h2>
-        <div>
-          <p>I have 2 dogs. I have a labradoodle named Mugsie and a goldendoodle named Bella</p>
-          <p>I love to volunteer and give back when I can.</p>
-          <p>I have Autism. My special interest happens to be Technology.</p>
-          <p>I&apos;m a big fan for DC comics, Anime, and Manga.</p>
+        <h6>*Results may vary.</h6>
+        <div className='accordian-item'>
+          <h2 className='accordian-header'>
+            <button className='accordian-button' type='button' data-bs-toggle='collapse' data-bs-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive'>Projects</button>
+          </h2>
+          <div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionInfo">
+            <div className='accordian-body'>
+              {/* Add your projects here */}
+            </div>
+          </div>
+        </div>
+        <div className='accordian-item'>
+          <h2 className='accordian-header'>
+            <button className='accordian-button' type='button' data-bs-toggle='collapse' data-bs-target='#collapseSix' aria-expanded='false' aria-controls='collapseSix'>Interesting Things about Me</button>
+          </h2>
+          <div id="collapseSix" className="accordion-collapse collapse" data-bs-parent="#accordionInfo">
+            <div className='accordian-body'>
+              <p>I have 2 dogs. I have a labradoodle named Mugsie and a goldendoodle named Bella</p>
+              <p>I love to volunteer and give back when I can.</p>
+              <p>I have Autism. My special interest happens to be Technology.</p>
+              <p>I&apos;m a big fan for DC comics, Anime, and Manga.</p>
+            </div>
+          </div>
         </div>
       </main>
     </>
