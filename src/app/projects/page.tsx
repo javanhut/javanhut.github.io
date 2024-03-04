@@ -2,8 +2,6 @@
 import axios from 'axios';
 import Editor from "@monaco-editor/react";
 import { useState } from 'react';
-
-// Add missing import statement for React library
 import React from 'react';
 
 function CodeEditor() {

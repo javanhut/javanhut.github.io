@@ -3,19 +3,35 @@ import MovieClip from '@/components/MovieClip';
 import Image from 'next/image';
 import why from '@/images/why.png';
 import mybrain from '@/images/mybrain.png';
+import logo from '@/images/logo.png';
+import { Button } from 'react-bootstrap';
 
 export default function Home() {
   return (
     <>
-      <main>
-        <nav className='navbar navbar-dark bg-dark'>
-        <div className='container-fluid'><a className='navbar-brand'>Javan&apos;s Website</a>
+     <head>
+    <meta charSet="utf-8" />
+    <title>Javan&apos;s Professional Profile</title>
+    <link rel="icon" href='@/images/logo.png'/>
+    </head>
+      <body>
+       <div>
+      
+    <nav className='navbar navbar-dark bg-dark'>
+      <div className='container-fluid'>
+        <a className='navbar-brand'>
+          <Image src={logo} alt="Personal Logo" width={50} height={50} />
+          <span>Javan&apos;s Professional Portfolio</span>
+        </a>
         <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button className="btn btn-outline-success" type="submit">Search</button>
-    </form>
-        </div>
-        </nav><p>This portfolio page is supposed to be professional....I am an engineer who enjoys what I do and this reflects my personality but I am professional when the need arises.(*Warning: Contains humor throughout)</p>
+          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <Button variant="outline-success" type="submit">Search</Button>
+        </form>
+      </div>
+    </nav>
+       
+      <div className='container'>
+      <p>This portfolio page is supposed to be professional....I am an engineer who enjoys what I do and this reflects my personality but I am professional when the need arises.(*Warning: Contains humor throughout)</p>
        <div className='accordian' id="accordianInfo">
         <div className='accordian-item'>
           <h2 className='accordian-header'>
@@ -117,7 +133,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </main>
+      </div>
+       </div>
+      </body>
     </>
   );
 }
