@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@antonz/codapi": "^0.16.0",
+    "@codesweetly/react-youtube-playlist": "^2.0.0",
     "@monaco-editor/react": "^4.6.0",
     "@popperjs/core": "^2.11.8",
     "axios": "^1.6.7",

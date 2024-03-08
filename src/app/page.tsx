@@ -112,7 +112,7 @@ export default function Home() {
         <h6>*Results may vary.</h6>
         <div className='accordian-item'>
           <h2 className='accordian-header'>
-            <button className='accordian-button' type='button' data-bs-toggle='collapse' data-bs-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive'>Projects</button>
+            <button className='accordian-button' type='button' data-bs-toggle='collapse' data-bs-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive'>Side Quests</button>
           </h2>
           <div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionInfo">
             <div className='accordian-body'>
