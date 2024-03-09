@@ -41,7 +41,7 @@ export default function Home() {
                 <p>I am Javan. I am a Electrical Engineer and Software Engineer. I am currently working at Intel.</p><p> I am also a student at Kennesaw State University pursuing a Master&apos;s degree in Computer Science with a concentration on Artifical Intelligence.</p>
                 </div>
                 <div>
-                <h4>I Would say I'm curious</h4>
+                <h4>I Would say I&apos;m curious</h4>
                 <Image src={why}  alt="Curious Employee"width={400} height={600}/>
                 </div>
                 
@@ -114,13 +114,13 @@ export default function Home() {
                           <p> Some people would say C is easy to learn and hard to Master.... It was me. I am some people.</p>
                           </BS.TabPane>
                           <BS.TabPane eventKey="#Cpp">
-                          <p>Same as answer above but with classes. (Inside joke about the origins of C++) </p><p>It seems like a few people don't like it like Ken Thompson, Brian Kernighan, Linus Torvalds but I&apos;m not like them. </p>
+                          <p>Same as answer above but with classes. (Inside joke about the origins of C++) </p><p>It seems like a few people don&apos;t like it like Ken Thompson, Brian Kernighan, Linus Torvalds but I&apos;m not like them. </p>
                         </BS.TabPane>
                         <BS.TabPane eventKey="#javascript">
                           <p>Javascript.... Well i built this website using it with React and Next.js.... I gotta like it alittle.</p>
                           </BS.TabPane>
                           <BS.TabPane eventKey="#Go">
-                          <p>Ahh Go.. Great for multithreading go routines are awesome. Syntax is weird but it's got the spirit.</p>
+                          <p>Ahh Go.. Great for multithreading go routines are awesome. Syntax is weird but it&apos;s got the spirit.</p>
                         </BS.TabPane>
                         <BS.TabPane eventKey="#HTML">
                           <p> Use this with JavaScript and CSS to create this webpage. I created a bunch of divs.</p>
