@@ -3,11 +3,9 @@ import React from 'react';
 import MovieClip from '@/components/MovieClip';
 import Image from 'next/image';
 import why from '@/images/why.png';
-import mybrain from '@/images/mybrain.png';
-import logo from '@/images/logo.png';
 import * as BS from 'react-bootstrap';
-import { Button, Accordion, AccordionBody, AccordionHeader, AccordionItem, Nav, Navbar,NavbarBrand, Form, FormControl, Container} from 'react-bootstrap';
-import {Search }  from 'react-bootstrap-icons';
+import {Accordion, AccordionBody, AccordionHeader, AccordionItem, Nav} from 'react-bootstrap';
+import NavbarOverlay from '@/components/NavBar';
 
 export default function Home() {
   return (
@@ -19,18 +17,7 @@ export default function Home() {
     </head>
       <body>
         
-    <Navbar expand="lg"className='bg-body-teritiary' bg='dark' data-bs-theme="dark">
-      <Container fluid>
-      <NavbarBrand href="#home">
-        <Image src={logo} alt="Personal Logo" width={50} height={50} />
-       <span>Javan&apos;s Professional Portfolio</span> 
-       </NavbarBrand>
-      </Container>
-        <Form className='d-flex'>
-          <FormControl type="search" placeholder="Search" className="me-2" />
-          <Button variant="outline-success"><Search color='white'/></Button>
-        </Form>
-    </Navbar>
+    <NavbarOverlay />
        
       <p>This portfolio page is supposed to be professional....I am an engineer who enjoys what I do and this reflects my personality but I am professional when the need arises.(*Warning: Contains humor throughout)</p>
           <Accordion>

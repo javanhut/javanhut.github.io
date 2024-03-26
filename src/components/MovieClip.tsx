@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import YouTube from "react-youtube";
 import { YouTubePlaylist } from "@codesweetly/react-youtube-playlist";
 
 class MovieClip extends React.Component{
