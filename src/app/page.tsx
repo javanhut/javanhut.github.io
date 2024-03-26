@@ -6,6 +6,7 @@ import why from '@/images/why.png';
 import * as BS from 'react-bootstrap';
 import {Accordion, AccordionBody, AccordionHeader, AccordionItem, Nav} from 'react-bootstrap';
 import NavbarOverlay from '@/components/NavBar';
+import YoutubeVideo from '@/components/YoutubeVideo';
 
 export default function Home() {
   return (
@@ -131,6 +132,15 @@ export default function Home() {
                 
               </AccordionItem>
               <AccordionItem eventKey={'5'}>
+                <AccordionHeader>Projects</AccordionHeader>
+                <AccordionBody>
+                  <h2>Nora- AI Emotional Chatbot</h2>
+                <YoutubeVideo />
+                </AccordionBody>
+
+              </AccordionItem>
+              
+              <AccordionItem eventKey={'6'}>
                 <AccordionHeader>Interesting Things about Me</AccordionHeader>
                 <AccordionBody>
               <div>
@@ -141,6 +151,7 @@ export default function Home() {
              </div>
                 </AccordionBody>
               </AccordionItem>
+              
 
           </Accordion>
           <footer>*Results may vary. I know this page is satirical but I genuinely love technology and engineering so my profile is a love letter to that idea.</footer>
