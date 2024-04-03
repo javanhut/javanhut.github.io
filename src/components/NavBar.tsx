@@ -10,10 +10,10 @@ function NavbarOverlay(){
     return (<><Navbar expand="lg"className='bg-body-teritiary' bg='dark' data-bs-theme="dark">
     <Container fluid>
     <NavbarBrand href="#home">
-      <Image src={logo} alt="Personal Logo" width={50} height={50} />
+      <Image className='inline-block' src={logo} alt="Personal Logo" width={50} height={50} />
      <span>Javan Hutchinson</span> 
      </NavbarBrand>
-     <Nav className='me-auto'>
+     <Nav className='me-auto inline-block'>
       <BS.NavDropdown title="Links to Social Media" id="basic-nav-dropdown"> 
       <BS.NavDropdown.Item href="https://www.linkedin.com/in/javan-hutchinson/"><Linkedin/> LinkedIn</BS.NavDropdown.Item>
       <BS.NavDropdown.Item href="https://github.com/javanhut?tab=repositories"><Github /> GitHub</BS.NavDropdown.Item>
@@ -22,7 +22,7 @@ function NavbarOverlay(){
 
      </Nav>
     </Container>
-      <Form className='d-flex'>
+      <Form className='d-flex inline-block'>
         <FormControl type="search" placeholder="Search" className="me-2" />
         <Button variant="outline-success"><Search color='white'/></Button>
       </Form>

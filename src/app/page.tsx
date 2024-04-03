@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Head from 'next/head';
 import why from '@/images/why.png';
 import me from '@/images/me.jpg';
-
 import { TabContainer, Row, Col, Nav, NavItem, NavLink, TabContent, TabPane, Container } from 'react-bootstrap';
 import NavbarOverlay from '@/components/NavBar';
 import YoutubeVideo from '@/components/YoutubeVideo';
@@ -22,11 +21,12 @@ export default function Home() {
       </Head>
       <div className='cursor'>
       <NavbarOverlay />
-      <div style={{ overflowY: 'scroll', maxHeight:'match-height', maxWidth: "match-width"}}>
+      <div className="dark:bg-slate-800">
+      <div className="" style={{ overflowY: 'scroll', maxHeight:'match-height', maxWidth: "match-width"}}>
         <Container>
         <Row>
           <Col>
-          <div className='professional-description' style={{padding: "10px", paddingBottom: "10px"}}>
+          <div className='professional-description dark:text-white' style={{padding: "10px", paddingBottom: "10px"}}>
           <h3>Professional Description</h3>
           <p>My name is Javan (Pronounced Jay-vin) Hutchinson , an Electrical Engineer and Software Engineer and a Former Intel Engineer,</p>
           <p>Currently a Computer Science graduate student specializing in Artificial Intelligence at Kennesaw State University.</p>
@@ -34,21 +34,22 @@ export default function Home() {
           </div>
           </Col>
 
-          <Col>
-          <p><i>Personal Philosophy:</i> Embrace learning. If unknown, discover it. If challenging, master it.</p>
+          <Col className='flex flex-col items-center justify-center h-full'>
+              <p className='text-center'><b><i>Personal Philosophy:</i></b> Embrace learning. If unknown, discover it. If challenging, master it.</p>
           </Col>
+
         </Row>
 
         <Row>
           <Col>
-          <div className='education' style={{padding: "10px", marginBottom: "10px"}}>
+          <div className='education dark:text-white' style={{padding: "10px", marginBottom: "10px"}}>
           <h3>Education</h3>
           <p>I have a Bachelor&apos;s degree in Electrical Engineering from the Kennesaw State University, Marietta, Georgia.</p>
           <p>I am currently pursuing a Master&apos;s degree in Computer Science with a concentration on Artificial Intelligence from the Kennesaw State University, Marietta, Georgia.</p>
           </div>
           </Col>
           <Col>
-          <div className='work-experience' style={{padding: "10px", paddingBottom: "10px"}}>
+          <div className='work-experience dark:text-white' style={{padding: "10px", paddingBottom: "10px"}}>
           <h3>Work Experience</h3>
           <p>Company: <b>Intel</b></p><p>Role: <b>Software Engineer</b></p><p>Duration: <b>June 2022 - April 2024</b></p>
           </div>
@@ -56,7 +57,7 @@ export default function Home() {
         </Row>
         <Row>
           <Col>
-          <div className=''>
+          <div className='dark:text-white'>
           <h3>Programming Languages</h3>
           <TabContainer id="list-group-tabs-example" defaultActiveKey="#link1">
             <Row>
@@ -121,7 +122,7 @@ export default function Home() {
           </div>
           </Col>
           <Col>
-          <div className=''>
+          <div className='dark:text-white'>
             <h3>Side Quests</h3>
           <MovieClip /> 
           </div>
@@ -129,29 +130,37 @@ export default function Home() {
         </Row>
         <Row>
           <Col>
-          <div className=''>
+          <div className='dark:text-white'>
             <h3>Projects</h3>
             <h4>Nora- AI Emotional Chatbot</h4>
           <YoutubeVideo /> 
           </div>
           </Col>
-          <Col>
-          <div className=''>
-            <h3>About Me</h3>
-            <Image src={me} alt='picture of me ' width={200} height={300}/>
-            <p>I have 2 dogs. I have a labradoodle named Mugsie and a goldendoodle named Bella</p>
-            <Image src={why} alt="Curious Employee" width={200} height={200} />
-            <p>I love to volunteer and give back when I can.</p>
-            <p>I have Autism. My special interest happens to be Technology.</p>
-            <p>I&apos;m a big fan for DC comics, Anime, and Manga.</p>
-          </div>
-          </Col>
+          <Col className="flex flex-col space-y-4 dark:text-white">
+                <h3 className='inline-block'>About Me</h3>
+                <div className="flex items-center space-x-4">
+                  <Image
+                    className="inline-block h-75 w-25 rounded-full ring-2 ring-black"
+                    src={me}
+                    alt='picture of me'
+                    width={100}
+                    height={300}
+                  />
+                  <div>
+                    <p>I have 2 dogs. I have a labradoodle named Mugsie and a goldendoodle named Bella.</p>
+                    <p>I have Autism. My special interest happens to be Technology.</p>
+                    <p>I&apos;m a big fan of DC comics, Anime, and Manga.</p>
+                    <p>I love to volunteer and give back when I can.</p>
+                  </div>
+                </div>
+            </Col>
+
+
         </Row>
-        <footer>*Results may vary. I know this page is satirical but I genuinely love technology and engineering so my profile is a love letter to that idea.</footer>
         </Container>
       </div>
     </div>
     </div>
-    
+    </div>
   );
 }
