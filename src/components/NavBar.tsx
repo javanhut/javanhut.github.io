@@ -11,7 +11,7 @@ function NavbarOverlay(){
     <Container fluid>
     <NavbarBrand href="#home">
       <Image src={logo} alt="Personal Logo" width={50} height={50} />
-     <span>Javan&apos;s Professional Portfolio</span> 
+     <span>Javan Hutchinson</span> 
      </NavbarBrand>
      <Nav className='me-auto'>
       <BS.NavDropdown title="Links to Social Media" id="basic-nav-dropdown"> 

@@ -27,10 +27,10 @@ function CodeEditor() {
     <div>
       <div>
         <select value={defaultLanguage} onChange={handleLanguageChange}>
-          <option value="javascript">JavaScript</option>
-          <option value="typescript">TypeScript</option>
-          <option value="python">Python</option>
-          {/* Add more options for other programming languages */}
+          <option value="javascript">Python</option>
+          <option value="typescript">C++</option>
+          <option value="python">Java</option>
+          <option value="python">Go</option>
         </select>
       </div>
       <Editor
