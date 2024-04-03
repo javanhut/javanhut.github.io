@@ -4,6 +4,7 @@ import MovieClip from '@/components/MovieClip';
 import Image from 'next/image';
 import Head from 'next/head';
 import why from '@/images/why.png';
+import me from '@/images/me.jpg';
 
 import { TabContainer, Row, Col, Nav, NavItem, NavLink, TabContent, TabPane, Container } from 'react-bootstrap';
 import NavbarOverlay from '@/components/NavBar';
@@ -27,14 +28,13 @@ export default function Home() {
           <Col>
           <div className='professional-description' style={{padding: "10px", paddingBottom: "10px"}}>
           <h3>Professional Description</h3>
-          <p>My name is Javan Hutchinson, an Electrical Engineer and Software Engineer and a Former Intel Engineer,</p>
-          <p>and a Computer Science graduate student specializing in Artificial Intelligence at Kennesaw State University.</p>
+          <p>My name is Javan (Pronounced Jay-vin) Hutchinson , an Electrical Engineer and Software Engineer and a Former Intel Engineer,</p>
+          <p>Currently a Computer Science graduate student specializing in Artificial Intelligence at Kennesaw State University.</p>
           <p>Curiosity drives me towards continuous learning and growth.</p>
           </div>
           </Col>
 
           <Col>
-          <Image src={why} alt="Curious Employee" width={200} height={200} />
           <p><i>Personal Philosophy:</i> Embrace learning. If unknown, discover it. If challenging, master it.</p>
           </Col>
         </Row>
@@ -96,21 +96,24 @@ export default function Home() {
                   <TabPane eventKey="#python">
                     <p>This is by far the language I&apos;m most proficient and have been coding in the longest.</p>
                     <p>I have coded professionally in this language for about 2 years and contributed to mostly internal repositories with some Open Source contributions.</p>
-                    <p>Most of my coding projects are in this language. And the third coding language I learned.</p>
+                    <p>I help build an automation framework, automated test cases, and set up automated framworks using python and am very experienced with it&apos;s features and functions.</p>
+                    <p>Most of my coding projects are in this language .</p>
                   </TabPane>
                   <TabPane eventKey="#java">
                     <div>
-                      <p>This is the language I abhor the most. Not very intuitive and my least favorite language I&apos;ve used, Used it for university assignments and that&apos;s pretty much it.</p>
-                      <p>I know it&apos;s supposed to be used for so much, I can code in it I just don&apos;t enjoy it.</p>
+                      <p>I tend to think this language is overly verbose and was the first language outside of matlab that i learned while taking cs courses. I can design programs and understand OOP concepts in this language.</p>
+                      <p>Personal feelings about this language aside i am comfortable coding in this language.</p>
                     </div>
                   </TabPane>
-                  <TabPane eventKey="#kotlin"></TabPane>
-                  <TabPane eventKey="#C"></TabPane>
-                  <TabPane eventKey="#Cpp"></TabPane>
-                  <TabPane eventKey="#javascript"></TabPane>
-                  <TabPane eventKey="#Go"></TabPane>
-                  <TabPane eventKey="#HTML"></TabPane>
-                  <TabPane eventKey="#CSS"></TabPane>
+                  <TabPane eventKey="#kotlin"><p> I started to learn this language for android app development. I can comfortable navigate this language. Although I professional experience.</p></TabPane>
+                  <TabPane eventKey="#C"><p>I learned this language during my undergrad and have used it for Linux kernel drivers and controlling microcontrollers. </p></TabPane>
+                  <TabPane eventKey="#Cpp"><p>I love this language for it&apos;s functionality and closeness to the hardware. I can comfortably code in C++ but a quote from Bjarne Stroustrup describes my relationship with this language:</p>
+                  <q>C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off.</q>
+                  </TabPane>
+                  <TabPane eventKey="#javascript"><p>I used this language to build this webpage. I&apos;m familar with Next.js, Node.js and React. I have helped build webapps with this.</p></TabPane>
+                  <TabPane eventKey="#Go"><p>I can code in it really like the go routines for multithreading.</p></TabPane>
+                  <TabPane eventKey="#HTML"><p>I can use it. I suppose easy to implement hard to master would be the term here.</p></TabPane>
+                  <TabPane eventKey="#CSS"><p>I can use it. Not hard to do but dealing with divs not my favorite thing.</p></TabPane>
                 </TabContent>
               </Col>
             </Row>
@@ -135,7 +138,9 @@ export default function Home() {
           <Col>
           <div className=''>
             <h3>About Me</h3>
+            <Image src={me} alt='picture of me ' width={200} height={300}/>
             <p>I have 2 dogs. I have a labradoodle named Mugsie and a goldendoodle named Bella</p>
+            <Image src={why} alt="Curious Employee" width={200} height={200} />
             <p>I love to volunteer and give back when I can.</p>
             <p>I have Autism. My special interest happens to be Technology.</p>
             <p>I&apos;m a big fan for DC comics, Anime, and Manga.</p>

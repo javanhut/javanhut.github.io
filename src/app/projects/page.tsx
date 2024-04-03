@@ -7,7 +7,7 @@ import React from 'react';
 function CodeEditor() {
   const [code, setCode] = useState("// Write your code here");
   const [output, setOutput] = useState("");
-  const [defaultLanguage, setDefaultLanguage] = useState("javascript"); // Add state for default language
+  const [defaultLanguage, setDefaultLanguage] = useState("python"); // Add state for default language
 
   const executeCode = async () => {
     try {
@@ -15,7 +15,7 @@ function CodeEditor() {
       setOutput(response.data.output);
     } catch (error) {
       console.error('Error executing code:', error);
-      setOutput("Error executing code.");
+      setOutput("Couldn't recieve code from server.");
     }
   };
 
@@ -27,10 +27,11 @@ function CodeEditor() {
     <div>
       <div>
         <select value={defaultLanguage} onChange={handleLanguageChange}>
-          <option value="javascript">Python</option>
-          <option value="typescript">C++</option>
-          <option value="python">Java</option>
-          <option value="python">Go</option>
+          <option value="python">Python</option>
+          <option value="cpp">C++</option>
+          <option value="java">Java</option>
+          <option value="go">Go</option>
+          <option value="javascript">Javascript</option>
         </select>
       </div>
       <Editor
