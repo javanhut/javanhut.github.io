@@ -13,10 +13,6 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
-    fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-    },
     extend: {
       backgroundImage:{
         // Assuming your project places the `images` folder at the root

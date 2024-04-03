@@ -21,7 +21,7 @@ export default function Home() {
         <meta name="description" content="Javan&apos;s Professional Portfolio - Engineer and AI Enthusiast" />
       </Head>
       <NavbarOverlay />
-      <div className="bg-mountain-image">
+      <div className="bg-auto bg-center bg-mountain-image">
       <div className="" style={{ overflowY: 'scroll', maxHeight:'match-height', maxWidth: "match-width"}}>
         <Container>
         <Row>
@@ -35,8 +35,10 @@ export default function Home() {
           </div>
           </Col>
 
-          <Col className='flex flex-col items-center justify-center h-full'>
-              <p className='text-center text-black bg-gradient-to-r from-white to-transparent shadow-md'><b><i>Personal Philosophy:</i></b> Embrace learning. If unknown, discover it. If challenging, master it.</p>
+          <Col className='flex flex-col items-center justify-center h-full align-middle'>
+            <div className='text-center text-black bg-gradient-to-r from-white to-transparent shadow-md align-middle'>
+              <p><b><i>Personal Philosophy:</i></b> Embrace learning. If unknown, discover it. If challenging, master it.</p>
+            </div>
           </Col>
 
         </Row>
