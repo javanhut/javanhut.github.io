@@ -13,11 +13,11 @@ function NavbarOverlay(){
       <Image className='inline-block' src={logo} alt="Personal Logo" width={50} height={50} />
      <span>Javan Hutchinson</span> 
      </NavbarBrand>
-     <Nav className='me-auto inline-block'>
+     <Nav className='me-auto'>
       <BS.NavDropdown title="Links to Social Media" id="basic-nav-dropdown"> 
-      <BS.NavDropdown.Item href="https://www.linkedin.com/in/javan-hutchinson/"><Linkedin/> LinkedIn</BS.NavDropdown.Item>
-      <BS.NavDropdown.Item href="https://github.com/javanhut?tab=repositories"><Github /> GitHub</BS.NavDropdown.Item>
-      <BS.NavDropdown.Item href="https://www.youtube.com/@EngineerSpaceCadet"><Youtube/> Youtube</BS.NavDropdown.Item>
+      <BS.NavDropdown.Item  className="inline-block" href="https://www.linkedin.com/in/javan-hutchinson/"><Linkedin/> LinkedIn</BS.NavDropdown.Item>
+      <BS.NavDropdown.Item className="inline-block" href="https://github.com/javanhut?tab=repositories"><Github /> GitHub</BS.NavDropdown.Item>
+      <BS.NavDropdown.Item  className="inline-block" href="https://www.youtube.com/@EngineerSpaceCadet"><Youtube/> Youtube</BS.NavDropdown.Item>
       </BS.NavDropdown>
 
      </Nav>

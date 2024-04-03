@@ -4,8 +4,6 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}', // Note the addition of the `app` directory.
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
- 
-    // Or if using `src` directory:
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
@@ -19,7 +17,12 @@ module.exports = {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
-    extend: {},
+    extend: {
+      backgroundImage:{
+        // Assuming your project places the `images` folder at the root
+        'mountain-image': "url('/img/mountain.jpg')",
+      }
+    },
     
   },
   plugins: [],
