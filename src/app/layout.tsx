@@ -10,8 +10,8 @@ import AnimatedCursor from "react-animated-cursor";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Javan's Professional Portfolio",
-  description: "Projects and information about Javan's professional career.",
+  title: "Javan Hutchinson - Software Engineer",
+  description: "Software Engineer II at Nike. Specializing in systems programming, cloud infrastructure, and backend development.",
 };
 
 export default function RootLayout({
@@ -24,18 +24,42 @@ export default function RootLayout({
       <body className={inter.className}>
        {children}
        <AnimatedCursor
-        innerSize={5}
-        outerSize={20}
-        innerScale={1}
-        outerScale={2}
+        innerSize={8}
+        outerSize={35}
+        innerScale={0.7}
+        outerScale={1.5}
         outerAlpha={0}
         innerStyle={{
-        backgroundColor: '#080808'
-          }}
+          backgroundColor: '#ef4444',
+          mixBlendMode: 'exclusion'
+        }}
         outerStyle={{
-          border: '3px solid #009BFF'
-          }}
-          trailingSpeed={10}
+          border: '3px solid #ef4444',
+          mixBlendMode: 'exclusion'
+        }}
+        clickables={[
+          'a',
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          'label[for]',
+          'select',
+          'textarea',
+          'button',
+          '.link',
+          {
+            target: '.custom',
+            innerSize: 12,
+            outerSize: 12,
+            color: '255, 255, 255',
+            outerAlpha: 0.3,
+            innerScale: 0.7,
+            outerScale: 5
+          }
+        ]}
+        trailingSpeed={8}
 />
       <BootstrapClient />
       </body>

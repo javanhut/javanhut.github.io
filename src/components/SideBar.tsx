@@ -39,7 +39,7 @@ const SidebarExampleVisible = () => (
     <SidebarPusher>
       <Segment basic>
         <Header as='h3'>Application Content</Header>
-        <Image src='/images/wireframe/paragraph.png' />
+        <Image src='/images/wireframe/paragraph.png' alt='Content placeholder' />
       </Segment>
     </SidebarPusher>
   </SidebarPushable>
